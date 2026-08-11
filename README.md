@@ -4,12 +4,27 @@
 
 # 💻 Tech Stack:
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![React Native](https://img.shields.io/badge/react_native-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+
 # 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=looksg00d&theme=tokyonight&hide_border=false&include_all_commits=false&count_private=false)<br/>
-![](https://nirzak-streak-stats.vercel.app/?user=looksg00d&theme=tokyonight&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=looksg00d&theme=tokyonight&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
 
-### ✍️ Random Dev Quote
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/stats-dark.svg">
+  <img src="assets/stats-light.svg" alt="looksg00d's contribution activity" width="480">
+</picture>
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/streak-dark.svg">
+  <img src="assets/streak-light.svg" alt="looksg00d's contribution streaks" width="480">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/langs-dark.svg">
+  <img src="assets/langs-light.svg" alt="looksg00d's top languages" width="480">
+</picture>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/year-dark.svg">
+  <img src="assets/year-light.svg" alt="looksg00d's contributions in the last year" width="656">
+</picture>
+
+<sub>Generated nightly by <a href="scripts/generate_stats.py">scripts/generate_stats.py</a> — no third-party widgets, no external requests.</sub>

@@ -1,0 +1,7 @@
+# Full-weight source fonts — dev cache only. build_font_subsets.py
+# downloads these on demand; only the tiny .woff2 subsets get committed.
+assets/fonts/_src_*.ttf
+
+__pycache__/
+*.pyc
+.pytest_cache/
