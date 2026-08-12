@@ -19,13 +19,17 @@ from pathlib import Path
 FONTS_DIR = Path(__file__).resolve().parent.parent / "assets" / "fonts"
 SOURCE_RELEASE = "https://github.com/JetBrains/JetBrainsMono/raw/master/fonts/ttf"
 
-# Every character the stats graphics draw: latin letters (language names,
-# labels), digits, and the punctuation used in dates/percentages/bars.
+# Every character the graphics draw: latin letters (language names, labels),
+# digits, the punctuation used in dates/percentages/bars, and — critically —
+# every glyph in portrait_data.RAMP (" .`:-=+*cs#%@"). A ramp character
+# missing here silently falls back to a system font at render time, which on
+# Windows renders '`'/'='/'*' in a colored symbol font instead of the theme's
+# monochrome text color. If you change RAMP, update this set to match.
 CHARSET = (
     "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     "abcdefghijklmnopqrstuvwxyz"
     "0123456789"
-    " .,:%-+#@_/()★"
+    " .,:%-+=*`#@_/()★"
 )
 
 SOURCES = {

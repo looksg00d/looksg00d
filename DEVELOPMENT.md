@@ -25,6 +25,42 @@ python -m pytest scripts/tests -q
 Covers the pure logic (streak computation, date/number formatting, the
 ramp-character mapping) — nothing that hits the network.
 
+## Generate the ASCII portrait
+
+Separate tool, separate from the nightly workflow — a portrait comes from a
+photo you pick once and gets committed as a static asset, not regenerated
+on a schedule.
+
+```bash
+pip install pillow numpy opencv-python-headless rembg onnxruntime
+python scripts/generate_portrait.py --input path/to/photo.jpg --login <your-username>
+```
+
+First run downloads a ~176MB background-removal model to `~/.u2net/`
+(cached after that). Writes `assets/portrait-light.svg` and
+`assets/portrait-dark.svg`; wire them into the README the same way as the
+stats graphics (`<picture>` + `prefers-color-scheme`).
+
+Only use a photo you have the rights to publish — the whole point of this
+project is that everything in the repo is something you can actually stand
+behind being there.
+
+What makes a photo work well (the pipeline draws with shadow, not detail —
+about 13 brightness levels total):
+
+- **side light**, roughly 45°, not flat frontal light — a uniformly lit
+  face renders as a featureless blob
+- **tight crop**, chin to just above the hair — a small face in a big
+  frame doesn't leave enough columns to resolve eyes
+- **1200px+ source resolution** — thin features like glasses frames get
+  averaged away on downscale from smaller photos
+- **plain background**, and avoid dark clothing against a dark wall
+- **slight angle**, not dead-on — gives the nose and jaw a shadow edge
+
+`--cols` defaults to 90 (the article's sweet spot — below ~88 the face
+muddies, well above it the block dominates the page). `--no-bg-removal`
+skips rembg if the photo's already on a clean plain background.
+
 ## Update the embedded font
 
 The SVGs embed subsets of JetBrains Mono as base64 `woff2` (see
