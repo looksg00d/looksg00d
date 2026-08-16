@@ -18,9 +18,9 @@
   <rect width="480" height="120" rx="10" fill="#ffffff" stroke="#d0d7de" stroke-width="1"/>
 
   <text x="24" y="34" font-size="12" fill="#6e7781">current streak</text>
-  <text x="24" y="70" font-size="34" font-weight="700" fill="#1b1f24">1</text>
-  <text x="50" y="70" font-size="13" fill="#6e7781">day</text>
-  <text x="24" y="92" font-size="11" fill="#6e7781">Aug 14, 2026</text>
+  <text x="24" y="70" font-size="34" font-weight="700" fill="#1b1f24">0</text>
+  <text x="50" y="70" font-size="13" fill="#6e7781">days</text>
+  <text x="24" y="92" font-size="11" fill="#6e7781">—</text>
 
   <text x="252" y="34" font-size="12" fill="#6e7781">longest streak</text>
   <text x="252" y="70" font-size="34" font-weight="700" fill="#1b1f24">2</text>
