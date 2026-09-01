@@ -16,7 +16,6 @@
     
   </style>
   <rect width="656" height="153" rx="10" fill="#0d1117" stroke="#30363d" stroke-width="1"/>
-<text x="8" y="16" font-size="10" fill="#8b949e">Sep</text>
 <text x="56" y="16" font-size="10" fill="#8b949e">Oct</text>
 <text x="104" y="16" font-size="10" fill="#8b949e">Nov</text>
 <text x="164" y="16" font-size="10" fill="#8b949e">Dec</text>
@@ -28,6 +27,7 @@
 <text x="476" y="16" font-size="10" fill="#8b949e">Jun</text>
 <text x="524" y="16" font-size="10" fill="#8b949e">Jul</text>
 <text x="572" y="16" font-size="10" fill="#8b949e">Aug</text>
+<text x="632" y="16" font-size="10" fill="#8b949e">Sep</text>
 <text x="20" y="30" font-size="13" fill="#e6edf3"><title>2025-09-07: 3 contributions</title>:</text>
 <text x="20" y="43" font-size="13" fill="#e6edf3"><title>2025-09-08: 11 contributions</title>@</text>
 <text x="248" y="69" font-size="13" fill="#e6edf3"><title>2026-01-21: 1 contribution</title>.</text>
